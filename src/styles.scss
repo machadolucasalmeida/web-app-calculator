@@ -1,0 +1,22 @@
+@import './reset.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primary: #FFFFFF;
+    --color-secondary: #8D8D8D;
+    --color-calc: #615A62; //APPARENTLY NO USE FOR IT
+    --bg-color: #000000;
+    --bg-btn-special-color: #5C5C5E; //Delete / AC option; +/-; % 
+    --bg-btn-number-color: #2A2A2C;
+    --bg-btn-operations-color: #FF9F0A;
+    --bg-btn-hover-color: #727272;
+    --bg-btn-hover-operations-color: #FFC702;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 8px 0px;
+}
