@@ -1,7 +1,7 @@
 @import './reset.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
     --color-primary: #FFFFFF;
     --color-secondary: #8D8D8D;
     --color-calc: #615A62; //APPARENTLY NO USE FOR IT
@@ -13,10 +13,15 @@
     --bg-btn-hover-operations-color: #FFC702;
 }
 
-html{
+html {
     font-family: 'Montserrat', sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 8px 0px;
 }

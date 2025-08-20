@@ -8,30 +8,31 @@
         </div>
         -->
         <div class="screen-result">
-            <div class="prev-calc">45 + 45 =</div>
-            <div class="current-calc">45</div>
+            <div class="prev-calc">{{previousCalculation}}</div>
+            <div class="current-calc">{{currentCalculation}}</div>
         </div>
         <div class="btn-container">
-            <button class="functions">A/C</button> <!--A/C ou Del, depending on the screen.-->
+            <button (click)="addToScreen('AC')" class="functions">A/C</button>
+            <!--A/C ou Del, depending on the screen.-->
             <button class="functions">+/-</button>
             <button class="functions">%</button>
-            <button class="operations">/</button>
-            <button class="numbers">7</button>
-            <button class="numbers">8</button>
-            <button class="numbers">9</button>
-            <button class="operations">x</button>
-            <button class="numbers">4</button>
-            <button class="numbers">5</button>
-            <button class="numbers">6</button>
-            <button class="operations">-</button>
-            <button class="numbers">1</button>
-            <button class="numbers">2</button>
-            <button class="numbers">3</button>
-            <button class="operations">+</button>
+            <button (click)="addToScreen('/')" class="operations">/</button>
+            <button (click)="addToScreen('7')" class="numbers">7</button>
+            <button (click)="addToScreen('8')" class="numbers">8</button>
+            <button (click)="addToScreen('9')" class="numbers">9</button>
+            <button (click)="addToScreen('X')" class="operations">x</button>
+            <button (click)="addToScreen('4')" class="numbers">4</button>
+            <button (click)="addToScreen('5')" class="numbers">5</button>
+            <button (click)="addToScreen('6')" class="numbers">6</button>
+            <button (click)="addToScreen('-')" class="operations">-</button>
+            <button (click)="addToScreen('1')" class="numbers">1</button>
+            <button (click)="addToScreen('2')" class="numbers">2</button>
+            <button (click)="addToScreen('3')" class="numbers">3</button>
+            <button (click)="addToScreen('+')" class="operations">+</button>
             <button class="numbers">M</button> <!--Calculator Modes (Basic - Convert - Scientific)-->
-            <button class="numbers">0</button>
-            <button class="numbers">,</button>
-            <button class="operations">=</button>
+            <button (click)="addToScreen('0')" class="numbers">0</button>
+            <button (click)="addToScreen(',')" class="numbers">,</button>
+            <button (click)="addToScreen('=')" class="operations">=</button>
         </div>
     </div>
 </div>
